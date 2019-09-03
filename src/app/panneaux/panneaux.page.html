@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+  	<ion-buttons slot="start">
+  	<ion-menu-button></ion-menu-button>
+	</ion-buttons>
+
+    <ion-title>Liste des Panneaux</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+	<ion-item *ngFor="let item of panneaux">
+			<ion-thumbnail slot="start">
+				<ion-img [src]="item.image"></ion-img>
+			</ion-thumbnail>
+			<div>
+				<h4><u>Catégorie :</u> {{item.categorie}}</h4>
+			</div>
+	
+	</ion-item>
+</ion-content>

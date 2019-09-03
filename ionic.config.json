@@ -1,0 +1,8 @@
+{
+  "name": "Codedelaroute",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

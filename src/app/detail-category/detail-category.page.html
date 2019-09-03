@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+  	<ion-buttons slot="start">
+  		<ion-menu-button></ion-menu-button>
+	</ion-buttons>
+
+    <ion-title>{{categorie.title}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="categorie">
+	<ion-item  >
+		<ion-img [src]="categorie.image"></ion-img>
+	</ion-item>
+	<div>
+		<h2 align="center"> Panneau {{categorie.title}}</h2>
+		<p><u> Description : </u><br> {{categorie.texte}}</p>
+	</div>
+</ion-content>
